@@ -166,4 +166,6 @@ ignored_files/*
 
 # data files
 json_data/*
-bert_data/*
+temp/*
+tmp/*
+src/tmp/*
