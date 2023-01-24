@@ -238,6 +238,7 @@ class DataIterator(object):
 
     def batch_buffer(self, data, batch_size):
         minibatch, size_so_far = [], 0
+        
         for ex in data:
             if(len(ex['src'])==0):
                 continue
@@ -258,6 +259,9 @@ class DataIterator(object):
     def create_batches(self):
         """ Create batches """
         data = self.data()
+        if(data == None):
+            return None
+        
         for buffer in self.batch_buffer(data, self.batch_size * 50):
 
             p_batch = sorted(buffer, key=lambda x: len(x[3]))

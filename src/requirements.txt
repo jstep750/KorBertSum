@@ -39,8 +39,6 @@ setuptools==65.6.3
 six==1.16.0
 tensorboardX==1.9
 tokenizers==0.10.3
-torch==1.1.0
-torchvision==0.3.0
 tqdm==4.64.1
 transformers==4.8.1
 typing_extensions==4.4.0
